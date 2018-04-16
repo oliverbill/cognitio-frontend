@@ -1,0 +1,46 @@
+<h2>Plano de Estudos do {{alunoLogado.nome}}</h2>
+
+  <h2> Vídeo-Aulas</h2>
+  <ul>
+      <li *ngFor="let video of planoEstudos.videoAulas">        
+        <a routerLink="/video-aula/{{video.id}}">
+          <span class="badge">{{video.nome}}</span>
+        </a>        
+      </li>
+  </ul>
+
+  <h2> Animações</h2>
+  <ul>
+      <li *ngFor="let anim of planoEstudos.animacoes">          
+        <a routerLink="/animacao/{{anim.id}}">
+          <span class="badge">{{anim.nome}}</span>
+        </a>          
+      </li>
+  </ul>
+
+  <h2> Rádionovelas</h2>
+  <ul>
+      <li *ngFor="let rad of planoEstudos.radioNovelas">          
+        <a routerLink="/radionovela/{{rad.id}}">
+          <span class="badge">{{rad.nome}}</span>
+        </a>          
+      </li>
+  </ul>
+
+  <h2> Quizzes</h2>
+  <ul>
+      <li *ngFor="let quiz of planoEstudos.quizzes">          
+        <a routerLink="/quiz/{{quiz.id}}">
+          <span class="badge">{{quiz.nome}}</span>
+        </a>          
+      </li>
+  </ul>
+
+  <h2> Jogos</h2>
+  <ul>
+      <li *ngFor="let j of planoEstudos.jogos">          
+        <a routerLink="/jogo/{{j.id}}">
+          <span class="badge">{{j.nome}}</span>
+        </a>          
+      </li>
+  </ul>
